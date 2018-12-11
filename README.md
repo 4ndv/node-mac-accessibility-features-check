@@ -11,7 +11,7 @@ $ npm install --save mac-accessibility-features-check
 ## Usage
 
 ```
-const accessibilityCheck = require('mac-accessibility-check')
+const accessibilityCheck = require('mac-accessibility-features-check')
 
 accessibilityCheck.check() // => returns true/false
 accessibilityCheck.checkAndPrompt() // => returns true/false and prompts user to confirm it. Note: changes require application restart!
