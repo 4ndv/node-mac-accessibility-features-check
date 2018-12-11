@@ -1,6 +1,6 @@
 {
   "name": "mac-accessibility-features-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gyp bindings for accessibility features check on mac",
   "main": "index.js",
   "scripts": {
