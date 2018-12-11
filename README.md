@@ -1,4 +1,4 @@
-# node-mac-accessibility-features-check
+# mac-accessibility-features-check
 
 Small node library for macOS that will allow you to check accessibility features permission for your application.
 
@@ -8,13 +8,22 @@ Small node library for macOS that will allow you to check accessibility features
 $ npm install --save mac-accessibility-features-check
 ```
 
+### Electron
+
+If you're planning to use this with electron you MUST use [electron-rebuild](https://github.com/electron/electron-rebuild), otherwise it will crash during runtime.
+
+Also it might not work with ASAR.
+
 ## Usage
 
-```
-const accessibilityCheck = require('mac-accessibility-features-check')
+```javascript
+// It's a good idea to run these checks only for macOS:
+if (process.platform === 'darwin') {
+  const accessibilityCheck = require('mac-accessibility-features-check')
 
-accessibilityCheck.check() // => returns true/false
-accessibilityCheck.checkAndPrompt() // => returns true/false and prompts user to confirm it. Note: changes require application restart!
+  accessibilityCheck.check() // => returns true/false
+  accessibilityCheck.checkAndPrompt() // => returns true/false and prompts user to confirm it. Note: changes require application restart!
+}
 ```
 
 ## License

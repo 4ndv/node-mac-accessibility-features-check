@@ -1,4 +1,4 @@
-// Yes, I KNOW that my C++ is very bad. I'm never used C++ in my whole life before. Sorry for the following code.
+// Yes, I KNOW that my C++ is very bad. I'm never used C++ in my whole life before. Sorry for the following code quality.
 
 #include <nan.h>
 #include <ApplicationServices/ApplicationServices.h>
